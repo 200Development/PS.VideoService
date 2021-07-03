@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  accountName : "psvideostorage",
+  containerName:"videos",
+  key:"jr2K45aZr/T7PITceDRrEiiyirFD4sez115e4H3MZsJm7/sbkeMIi5wKAA27iMSuzdZYWj7TPPtPZZhi9djGiA==",
+  
 };
 
 /*
