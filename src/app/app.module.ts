@@ -1,26 +1,24 @@
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { UploadComponent } from './upload/upload.component';
-import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { AddAccountComponent } from './add-account/add-account.component';
+import { UploadComponent } from './upload/upload.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    UploadComponent,
-    HomeComponent    
+    AppComponent, 
+    HomeComponent,
+    AddAccountComponent,
+    UploadComponent
   ],
-  imports: [
-    HttpClientModule,
+  imports: [        
     BrowserModule,
-    RouterModule.forRoot([
-      {path: 'home', component: HomeComponent},
-      {path: '', redirectTo: '/home', pathMatch: 'full'}
-    ]) 
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
