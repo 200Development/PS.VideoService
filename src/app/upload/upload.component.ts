@@ -1,5 +1,6 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import {  HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-upload',
@@ -26,7 +27,7 @@ export class UploadComponent {
     const formData = new FormData();
     formData.append('file', file);
 
-    this.http.post('https://localhost:44377/api/upload', formData, { headers: new HttpHeaders({ 'Access-Control-Allow-Origin': 'true' }) })
+    this.http.post(environment.baseUrl + '/upload', formData, { headers: new HttpHeaders({ 'Access-Control-Allow-Origin': 'true' }) })
       .subscribe(event => {
         this.message = 'Upload Successful.';
       })
