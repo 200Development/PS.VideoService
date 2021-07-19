@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
-import { UploadComponent } from '../services/upload/upload.component';
-import { AddComponent } from './add/add.component';
+import { ServiceModule } from '../services/service.module';
+import { AddVideoComponent } from './add/add.component';
 
 
 
 @NgModule({
   declarations: [
-    UploadComponent,
-    AddComponent
+    AddVideoComponent
   ],
   imports: [
+    ServiceModule
   ],
   exports: [
-    UploadComponent
+    AddVideoComponent
   ]
 })
 export class VideoModule { }

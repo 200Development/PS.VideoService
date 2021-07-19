@@ -5,21 +5,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AddAccountComponent } from './add-account/add-account.component';
-import { UploadComponent } from './services/upload/upload.component';
-import { VideoModule } from './video/video.module';
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [
     AppComponent, 
     HomeComponent,
-    AddAccountComponent,
-    UploadComponent
+    AddAccountComponent    
   ],
   imports: [        
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    VideoModule
+    ServiceModule
   ],
   bootstrap: [AppComponent]
 })

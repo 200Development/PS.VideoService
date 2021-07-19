@@ -1,13 +1,13 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-import {  HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: 'app-upload',
+  selector: 'azure-upload',
   templateUrl: './upload.component.html',
   styleUrls: ['./upload.component.css']
 })
-export class UploadComponent {  
+export class AzureUploadComponent {  
   file!: File;
   message: string | undefined;
 
