@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AddAccountComponent } from './add-account/add-account.component';
 import { ServiceModule } from './services/service.module';
+import { PaymentComponent } from './payment/payment.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     HomeComponent,
-    AddAccountComponent    
+    AddAccountComponent,
+    PaymentComponent,
+    DashboardComponent    
   ],
   imports: [        
     BrowserModule,
