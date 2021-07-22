@@ -1,21 +1,58 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>PsVideoProject</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>
-  .center {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-</style>
+  <style>
+    .center {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
 </head>
-<body>
+
+<body class="center">
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center border-bottom">
+      <span class="fs-4">PS Peace of Mind</span>
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Login</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Pricing</a>
+        <a class="py-2 text-dark text-decoration-none" href="#">Support</a>
+      </nav>
+    </div>
+  </header>
   <app-root></app-root>
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+       <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">&copy; 2021 - <script>document.write(new Date().getFullYear())</script> PostScript All Rights
+                Reserved</small>
+        </div>
+      <div class="col-12 col-md">
+        <div class="col-6 col-offset-3 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1">
+              <a class="link-secondary text-decoration-none" href="#">Team</a>
+            </li>
+            <li class="mb-1">
+              <a class="link-secondary text-decoration-none" href="#">Privacy</a>
+            </li>
+            <li class="mb-1">
+              <a class="link-secondary text-decoration-none" href="#">Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

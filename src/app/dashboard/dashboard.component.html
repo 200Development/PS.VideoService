@@ -1,1 +1,53 @@
-<p>dashboard works!</p>
+<div class="input-group mb-3">
+  <label class="input-group-text" for="uploadInput">Upload</label>
+  <input type="file" class="form-control" id="uploadInput">
+  <div class="d-flex align-items-center" style="margin-left: 12px;">
+    <strong>Uploading...</strong>
+    <div class="spinner-grow spinner-grow-sm ms-auto text-success" role="status" aria-hidden="true"></div>
+  </div>
+</div>
+<div class="mb-3">
+  <label for="messageTextArea" class="form-label">Message<small style="margin-left: 4px;">(optional)</small></label>
+  <textarea class="form-control" id="messageTextArea" rows="3"></textarea>
+</div>
+
+<div class="mb-3">
+  <label for="emailInput" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+</div>
+<button type="button" class="btn btn-success"><img src="../../assets/icons/cloud-arrow-up.svg"
+    style="margin-right: 8px; color: aliceblue;" />Add Video</button>
+<div class="mt-2 pt-2 border-top"></div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Subscription Start</th>
+      <th scope="col">Name</th>
+      <th scope="col">Message</th>
+      <th scope="col">Recipients</th>
+      <th scope="col">Subscription End</th>
+      <th scope="col">Last Delivery</th>
+      <th scope="col">Next Delivery</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7/12/2021</td>
+      <td>Message for posterity</td>
+      <td></td>
+      <td>Parsons Family Contact Group</td>
+      <td>7/12/2121</td>
+      <td></td>
+      <td>7/14/2031</td>
+    </tr>
+    <tr>
+      <td>7/12/2021</td>
+      <td>Message for posterity</td>
+      <td></td>
+      <td>Parsons Family Contact Group</td>
+      <td>7/12/2121</td>
+      <td></td>
+      <td>7/14/2031</td>
+    </tr>
+  </tbody>
+</table>
