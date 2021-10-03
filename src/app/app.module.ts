@@ -7,21 +7,21 @@ import { HomeComponent } from './home/home.component';
 import { AddAccountComponent } from './add-account/add-account.component';
 import { ServiceModule } from './services/service.module';
 import { PaymentComponent } from './payment/payment.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
     AppComponent, 
     HomeComponent,
     AddAccountComponent,
-    PaymentComponent,
-    DashboardComponent    
+    PaymentComponent   
   ],
   imports: [        
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ServiceModule
+    ServiceModule,
+    DashboardModule
   ],
   bootstrap: [AppComponent]
 })
