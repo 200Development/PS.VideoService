@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
   templateUrl: './upload.component.html',
   styleUrls: ['./upload.component.css']
 })
-export class AzureUploadComponent {  
+export class AzureUploadComponent {
   file!: File;
   message: string | undefined;
 
@@ -24,13 +24,21 @@ export class AzureUploadComponent {
       return;
     }
 
-    const formData = new FormData();
+    var formData = new FormData();
     formData.append('file', file);
 
-    this.http.post(environment.baseUrl + '/upload', formData, { headers: new HttpHeaders({ 'Access-Control-Allow-Origin': 'true' }) })
-      .subscribe(event => {
-        this.message = 'Upload Successful.';
-      })
+    var headers = new HttpHeaders(
+        {
+          'content-type': 'application/json',
+          'content-length': file.size
+        }
+    )
 
+    const response = this.http.post(environment.baseUrl + '/upload/uploadvideo', formData)
+    .subscribe({
+      next(response) { console.log(response); },
+      error(err) { console.log(err) },
+      complete() { console.log('Upload Completed Successfully') }
+    })
   }
 }
